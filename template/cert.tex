@@ -1,0 +1,62 @@
+% Exemplo de certificados para eventos ou congressos
+
+\documentclass{article}
+\usepackage[latin1]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage[usenames,svgnames,dvipsnames,table]{xcolor}
+\usepackage{setspace}
+\usepackage[vcentering,landscape,a4paper,
+            top=1.54cm,bottom=2.54cm,
+            left=2.54cm,right=2.54cm]{geometry}
+
+
+\lhead{}
+\chead{}
+\rhead{}
+\renewcommand{\headrule}{\color{white}}
+\cfoot{\includegraphics[width=\textwidth]{imagens/footer.jpg}}
+\pagestyle{fancy}
+
+
+\begin{document}
+\doublespacing
+\noindent
+\begin{minipage}{\textwidth}
+  \includegraphics[width=\textwidth]{imagens/header.jpg}
+
+  \sffamily
+  \bigskip
+  \bigskip
+
+  \begin{center}
+ 	%Edit here to change the title of certificate
+    {\Huge \textbf{Certificate of Attendance}}\\
+	%End of change title
+    \bigskip
+    \bigskip
+  \end{center}
+
+  \begin{center}
+    \begin{minipage}{0.8\textwidth}
+	%Edit here to change the text of certificate
+      {\Large This is to certify that \emph{$VarName}\ with RG number as \emph{$VarRG}\ attended the
+      \texttt{name of the event}, from \texttt{month} 13$^{th}$ to 26$^{th}$ in
+      \texttt{local}, \texttt{country}.}
+	%End of change text
+    \end{minipage}
+  \end{center}
+
+  \vspace{2.0cm}
+  \singlespacing
+
+  \begin{center}
+    \Large {\rule{7.0cm}{0.5pt}\\
+	%Edit here to change the name of the chair of certificate
+    \texttt{Name of the chair}\\
+	%End of change chair
+    General Chair\\}
+  \end{center}
+
+\end{minipage}
+\end{document}
